@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Black White Speedometer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud" class="hidden">
+  <div class="cluster">
+    <div class="gauge small hp">
+      <div class="small-title">HP</div><div class="small-value" id="hp">100</div>
+      <div class="small-ring"></div>
+    </div>
+
+    <div class="gauge main">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <div class="ticks" id="ticks"></div>
+      <div class="numbers" id="numbers"></div>
+      <div class="speed" id="speed">0</div>
+      <div class="kmh">KM/H</div>
+      <div class="needle" id="needle"></div><div class="hub"></div>
+      <div class="odo-title">ODO</div><div class="odo" id="odo">0001</div>
+    </div>
+
+    <div class="side">
+      <div class="gauge small">
+        <div class="small-title">RPM</div><div class="small-value" id="rpm">0.0</div>
+        <div class="small-unit">x1000</div><div class="small-ring"></div>
+      </div>
+      <div class="gauge small fuel">
+        <div class="small-title">FUEL</div><div class="small-value" id="fuel">100</div>
+        <div class="small-unit">%</div><div class="small-ring"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <div class="gear"><b id="gear">N</b><small>GEAR</small></div>
+    <div class="status" id="engine">ENG</div>
+    <div class="status" id="lights">LT</div>
+    <div class="status" id="belt">BELT</div>
+    <div class="signals"><span id="left">◀</span><span id="right">▶</span></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
